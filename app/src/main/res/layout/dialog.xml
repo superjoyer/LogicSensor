@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP - Address : "
+            android:textSize="15dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="17dp"
+            android:textColor="#1faee9" />
+
+                <EditText
+                    android:id="@+id/editTextIpInput"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="39dp"
+                    android:background="@drawable/roundbackground"
+                    android:autoText="true"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    android:maxLines="1">
+
+                    <requestFocus />
+                </EditText>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Port : "
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:textColor="#1faee9" />
+    <EditText
+        android:id="@+id/editTextPortInput"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="91dp"
+        android:numeric="integer"
+        android:background="@drawable/roundbackground"
+        android:autoText="true"
+        android:inputType="number"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:maxLines="1">
+    </EditText>
+</RelativeLayout>

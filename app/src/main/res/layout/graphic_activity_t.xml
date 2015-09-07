@@ -1,0 +1,154 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context=".GraphicActivity"
+    android:paddingTop="52dp"
+    android:background="@drawable/application_log">
+
+
+    <TextView
+        android:id="@+id/txt_status"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="13dp"
+        android:paddingLeft="3dp"
+        android:layout_marginRight="107dp"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/timeView" />
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_weight="0"
+        android:layout_marginRight="15dp"
+        android:text="@string/connect"
+        android:background="@drawable/rectangle_rouded"
+        android:clickable="true"
+        android:textColor="@drawable/text_color_selector"
+
+        android:layout_alignTop="@+id/txt_status"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp" />
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Connect status:"
+        android:id="@+id/textView2"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="3dp"
+        android:layout_alignStart="@+id/txt_status" />
+    <View
+        android:layout_width="220dp"
+        android:background="@drawable/shape_line"
+        android:layout_height="2dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/txt_status"
+        android:layout_alignEnd="@+id/txt_status" />
+
+
+
+
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="145dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/timeView"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:textStyle="bold"
+        android:textColorLink="@color/abc_background_cache_hint_selector_material_dark"
+
+        android:theme="@style/CustomActionBarTheme"
+        android:textColor="#ffffffff"
+
+        android:layout_below="@+id/txt_status"
+        android:layout_alignParentStart="true" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Avarage Temperature:"
+        android:id="@+id/textView"
+        android:layout_weight="0.31"
+        android:textSize="15dp"
+        android:password="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/graph2"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" 0 °C"
+        android:id="@+id/textTemp"
+
+        android:autoText="true"
+        android:maxLines="1"
+        android:focusable="false"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:textSize="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="LargeText"
+        android:textSize="15dp"
+        android:id="@+id/textViewseasonInfo"
+        android:layout_below="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current season:"
+        android:id="@+id/textView6"
+       android:layout_marginTop="69dp"
+        android:layout_alignEnd="@+id/graph2" />
+    <LinearLayout
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignTop="@+id/timeView"
+        android:layout_alignStart="@+id/timeView"
+        android:layout_above="@+id/textView"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/backgroundgraph"
+        android:id="@+id/graph2">
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

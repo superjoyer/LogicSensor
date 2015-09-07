@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature : "
+        android:textSize="17dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:textColor="#1faee9" />
+
+    <TextView
+        android:id="@+id/textTemp"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/roundbackground"
+        android:autoText="true"
+        android:textColor="#000"
+        android:textSize="17dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:text=" 0 °C"
+        android:layout_above="@+id/textView2"
+        android:layout_toEndOf="@+id/textView1">
+
+    </TextView>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity : "
+        android:textSize="17dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="20dp"
+        android:textColor="#1faee9"
+        android:layout_below="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1" />
+    <TextView
+        android:id="@+id/textHumi"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/roundbackground"
+        android:autoText="true"
+        android:textColor="#000"
+        android:textSize="17dp"
+        android:singleLine="true"
+        android:maxLines="1"
+
+        android:text=" 0 %"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2">
+
+    </TextView>
+
+</RelativeLayout>

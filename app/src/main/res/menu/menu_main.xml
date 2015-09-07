@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item android:id="@+id/recommend"
+        android:title="Recommendations"
+        android:icon="@drawable/agt_update_recommended_3015"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item  android:id="@id/database"
+        app:showAsAction="always"
+        android:icon="@drawable/package_settings_1447"
+        android:title="@string/item2">
+    </item>
+    <item  android:id="@id/connect_item"
+        app:showAsAction="always"
+        android:icon="@drawable/internet8294"
+        android:title="@string/item1">
+    </item>
+
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="connect_item" type="id" />
+    <item name="database" type="id" />
+    <item name="graphic_item_temp" type="id" />
+    <item name="delete_item" type="id" />
+    <item name="delete_All" type="id" />
+</resources>

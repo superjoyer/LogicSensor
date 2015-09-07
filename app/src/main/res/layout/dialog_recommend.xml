@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summer (Temperature) : "
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:textColor="#1faee9" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="The maximum temperature of not more than 40°C"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView1"
+        android:layout_alignStart="@+id/textView1" />
+
+    <TextView
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="The minimum temperature of at least 20°C"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Winter (Temperature) : "
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#1faee9"
+        android:layout_below="@+id/textView10"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="The minimum temperature of at least  -40°C"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView13"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:textSize="13dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="The minimum humidity of at least  15%"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView17"
+        android:layout_alignStart="@+id/textView17" />
+
+    <TextView
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="The maximum temperature of not more than 60%"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView14"
+        android:layout_alignStart="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summer &amp; Winter (Humidity) : "
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#1faee9"
+        android:layout_below="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_marginTop="25dp" />
+
+
+</RelativeLayout>

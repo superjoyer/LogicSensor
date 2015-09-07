@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LogicSensor</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="graphic_item_temp">Temperature-Chart</string>
+    <string name="graphic_item_humi">Humidity-Chart</string>
+
+
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_connecting">Connecting...</string>
+    <string name="status_connected">Connected</string>
+    <string name="status_error">Error</string>
+
+    <string name="connect">Connect</string>
+    <string name="menu_actionmode">Action Mode</string>
+    <string name="actionmode_title">Action Mode</string>
+    <string name="cmd_ledon">Turn on </string>
+    <string name="cmd_ledoff">Turn off</string>
+    <string name="item1">item1</string>
+    <string name="item2">item2</string>
+    <string name="delete_flag">delete</string>
+    <string name="select_all">select_all</string>
+</resources>

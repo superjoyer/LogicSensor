@@ -1,0 +1,271 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity"
+    android:paddingBottom="26dp"
+    android:paddingTop="52dp"
+    android:screenOrientation="portrait"
+    android:background="@drawable/application_log">
+
+
+    <!--android:background="@color/material_blue_grey_900"-->
+
+
+            <TextView
+                android:id="@+id/txt_status"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="13dp"
+                android:paddingLeft="3dp"
+                android:layout_marginRight="107dp"
+                android:textColor="#ffffffff"
+                android:background="#ff000000"
+                android:layout_above="@+id/timeView"
+                android:layout_alignStart="@+id/timeView"
+                android:layout_toEndOf="@+id/txt_debug" />
+            <Button
+                android:textSize="12dp"
+                android:id="@+id/btn_connect"
+
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="0"
+                android:layout_marginRight="15dp"
+                android:text="@string/connect"
+                android:background="@drawable/rectangle_rouded"
+                android:clickable="true"
+                android:textColor="@drawable/text_color_selector"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Connect status:"
+                android:id="@+id/textView2"
+                android:textColor="#ffffffff"
+
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="3dp"
+                android:layout_above="@+id/txt_status"
+                android:layout_alignStart="@+id/txt_status" />
+            <View
+                android:layout_width="220dp"
+                android:background="@drawable/shape_line"
+                android:layout_height="2dp"
+                android:layout_alignTop="@+id/txt_status"
+                android:layout_alignStart="@+id/txt_status"
+                android:layout_alignEnd="@+id/txt_status" />
+            <!--
+            <View
+                android:layout_width="220dp"
+                android:background="@drawable/shape_line"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+-->
+
+
+
+
+
+
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:layout_width="145dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/timeView"
+                android:textSize="@dimen/abc_text_size_display_1_material"
+                android:textStyle="bold"
+                android:textColorLink="@color/abc_background_cache_hint_selector_material_dark"
+
+                android:theme="@style/CustomActionBarTheme"
+                android:textColor="#ffffffff"
+                android:layout_above="@+id/btn_cmd_ledon"
+                android:layout_alignParentStart="true" />
+
+
+            <Button
+                android:id="@+id/btn_cmd_ledon"
+                android:layout_width="114dp"
+                android:layout_height="30dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textSize="12dp"
+                android:text="@string/cmd_ledon"
+                android:background="@drawable/rectangle_rouded"
+                android:textColor="@drawable/text_color_selector"
+                android:layout_above="@+id/btn_cmd_ledoff"
+                android:drawableLeft="@drawable/ktip"
+                android:layout_alignStart="@+id/timeView" />
+
+            <Button
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:id="@+id/btn_cmd_ledoff"
+                android:layout_width="114dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/cmd_ledoff"
+                android:textSize="12dp"
+                android:background="@drawable/rectangle_rouded"
+                android:textColor="@drawable/text_color_selector"
+                android:layout_above="@+id/consoleLabel"
+                android:drawableLeft="@drawable/lightswitch"
+                android:layout_alignStart="@+id/btn_cmd_ledon" />
+
+            <TextView
+                android:id="@+id/txt_debug"
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="15dp"
+                android:gravity="bottom"
+                android:layout_weight="2"
+                android:textColor="#ff0eb19e"
+                android:height="230dp"
+                android:scrollbars="vertical"
+                android:paddingLeft="3dp"
+                android:textSize="10dp"
+                android:background="#ff000000"
+                android:layout_alignStart="@+id/btn_cmd_ledoff"
+                android:layout_above="@+id/button"
+                android:layout_marginTop="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Console:"
+            android:id="@+id/consoleLabel"
+            android:textColor="#ffffffff"
+            android:paddingTop="10dp"
+            android:paddingLeft="3dp"
+            android:layout_above="@+id/scrollView"
+            android:layout_alignStart="@+id/scrollView" />
+        <View
+            android:layout_width="wrap_content"
+            android:background="@drawable/shape_line"
+            android:layout_height="2dp"
+            android:id="@+id/scrollView"
+            android:layout_alignTop="@+id/txt_debug"
+            android:layout_alignStart="@+id/txt_debug"
+            android:layout_alignEnd="@+id/txt_debug" />
+
+
+
+
+
+
+    <Button
+                android:layout_width="114dp"
+                android:layout_height="45dp"
+
+                android:text="Sensors"
+                android:id="@+id/button"
+
+                android:onClick="onTimeHumi"
+
+                android:background="@drawable/rectangle_rouded"
+
+                android:gravity="right|center_vertical"
+                android:paddingRight="15dp"
+                android:drawableLeft="@drawable/weather_6676"
+                android:paddingBottom="3dp"
+                android:paddingLeft="2dp"
+                android:textColor="@drawable/text_color_selector"
+                android:layout_marginTop="7dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/txt_debug"
+                android:textSize="12dp" />
+
+    <Button
+        android:layout_width="114dp"
+        android:layout_height="45dp"
+        android:text="°С T-Chart"
+        android:id="@+id/GraphT"
+        android:onClick="onTemperatureChart"
+        android:background="@drawable/rectangle_rouded"
+        android:drawableLeft="@drawable/pie"
+        android:paddingRight="8dp"
+
+        android:layout_marginLeft="3dp"
+        android:textSize="12dp"
+        android:paddingLeft="7dp"
+        android:textColor="@drawable/text_color_selector"
+
+        android:layout_below="@+id/timeView"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_alignEnd="@+id/txt_debug"
+        android:layout_alignBottom="@+id/btn_cmd_ledon" />
+
+    <Button
+        android:textSize="12dp"
+        android:layout_width="114dp"
+        android:layout_height="45dp"
+        android:text="% H-Chart"
+        android:id="@+id/button2"
+        android:onClick="onHumidityChart"
+        android:background="@drawable/rectangle_rouded"
+        android:drawableLeft="@drawable/volume_manager"
+        android:paddingRight="10dp"
+
+        android:layout_marginLeft="3dp"
+
+        android:paddingLeft="7dp"
+        android:textColor="@drawable/text_color_selector"
+
+        android:layout_alignTop="@+id/btn_cmd_ledoff"
+        android:layout_alignEnd="@+id/txt_debug"
+        android:layout_alignBottom="@+id/btn_cmd_ledoff" />
+
+    <Button
+        android:layout_width="114dp"
+        android:layout_height="45dp"
+        android:text="Log-File"
+        android:id="@+id/buttonFile"
+        android:background="@drawable/rectangle_rouded"
+        android:gravity="right|center_vertical"
+        android:paddingRight="15dp"
+        android:drawableLeft="@drawable/invoice_9231"
+        android:paddingBottom="3dp"
+        android:paddingLeft="8dp"
+        android:textColor="@drawable/text_color_selector"
+        android:textSize="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/txt_debug"
+        android:onClick="goToFileData" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="LargeText"
+        android:textSize="15dp"
+        android:id="@+id/textViewseasonInfo"
+        android:layout_below="@+id/textView6"
+        android:layout_alignEnd="@+id/GraphT" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current season:"
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/timeView"
+        android:layout_alignEnd="@+id/textViewseasonInfo" />
+
+
+</RelativeLayout>

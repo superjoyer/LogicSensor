@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+   <!--<style name="AppBaseThemeMaterial" parent="Base.Theme.AppCompat">-->
+
+
+   <style name="CustomActionBarTheme"  parent="Theme.AppCompat">
+
+
+      <item name="actionModeStyle">@drawable/color_menu_bar</item>
+      <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title</item>
+       <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle</item>
+
+       <item name="android:textColorSecondary">#1faee9</item>
+      <item name="windowActionBarOverlay">true</item>
+
+
+    </style>
+   <!-- <style name="LStyled.ActionMode" parent="@style/Widget.AppCompat.ActionMode">-->
+
+
+
+</resources>
